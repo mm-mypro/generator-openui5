@@ -1,0 +1,25 @@
+{
+    "name": "<%= _.slugify(applicationName) %>",
+    "version": "0.0.1",
+    "description": "<%= appDescription %>",
+    "main": "index.html",
+    "dependencies": {
+        "express": "~3.4.8",
+        "open": "~0.0.4"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-express-server": "~0.4.11",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-open": "~0.2.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "<%= gitRepository %>"
+    },
+    "author": "<%= authorName %>",
+    "license": "<%= licenseType %>"
+}
