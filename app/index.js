@@ -55,9 +55,9 @@
 				name: "Single Page MVC App",
 				value: "spa"
 			}, {
-                name: "Splitapp Boilerplate",
-                value: "boilerplate"
-            }]
+				name: "Splitapp Boilerplate",
+				value: "boilerplate"
+			}]
 		}, { // Only ask these questions if fiori-type app is chosen
 			when: function(response) {
 				return (response.applicationType === "fiori" || response.applicationType === "tiles");
@@ -285,50 +285,50 @@
 		this.template("fiori_tiles_app/_Component.js", "Component.js");
 	};
 
-    /**
-     * Scaffolding for a Splitapp Boilerplate Application.
-     */
-    openui5Generator.prototype.boilerplateApplication = function() {
-        if (this.applicationType !== "boilerplate") {
-            return;
-        }
+	/**
+	 * Scaffolding for a Splitapp Boilerplate Application.
+	 */
+	openui5Generator.prototype.boilerplateApplication = function() {
+		if (this.applicationType !== "boilerplate") {
+			return;
+		}
 
-        this.mkdir("app");
-        this.copy("boilerplate/app/Component.js", "app/Component.js");
+		this.mkdir("app");
+		this.copy("boilerplate/app/Component.js", "app/Component.js");
 
-        this.mkdir("css");
-        this.copy("boilerplate/css/style.css", "css/style.css");
+		this.mkdir("css");
+		this.copy("boilerplate/css/style.css", "css/style.css");
 
-        this.mkdir("i18n");
-        this.template("boilerplate/i18n/_i18n.properties", "i18n/i18n.properties");
-        this.template("boilerplate/i18n/_i18n_de.properties", "i18n/i18n_de.properties");
-        this.template("boilerplate/i18n/_i18n_en.properties", "i18n/i18n_en.properties");
+		this.mkdir("i18n");
+		this.template("boilerplate/i18n/_i18n.properties", "i18n/i18n.properties");
+		this.template("boilerplate/i18n/_i18n_de.properties", "i18n/i18n_de.properties");
+		this.template("boilerplate/i18n/_i18n_en.properties", "i18n/i18n_en.properties");
 
-        this.mkdir("js");
-        this.copy("boilerplate/js/app.js", "js/app.js");
+		this.mkdir("js");
+		this.copy("boilerplate/js/app.js", "js/app.js");
 
-        this.mkdir("img");
-        this.copy("boilerplate/img/57_iPhone_Desktop_Launch.png", "img/57_iPhone_Desktop_Launch.png");
-        this.copy("boilerplate/img/57_iPhone_Desktop_Launch@2.png", "img/57_iPhone_Desktop_Launch@2.png");
-        this.copy("boilerplate/img/72_iPad_Desktop_Launch.png", "img/72_iPad_Desktop_Launch.png");
-        this.copy("boilerplate/img/114_iPhone-Retina_Web_Clip.png", "img/114_iPhone-Retina_Web_Clip.png");
-        this.copy("boilerplate/img/144_iPad_Retina_Web_Clip.png", "img/144_iPad_Retina_Web_Clip.png");
-        this.copy("boilerplate/img/favicon.ico", "img/favicon.ico");
+		this.mkdir("img");
+		this.copy("boilerplate/img/57_iPhone_Desktop_Launch.png", "img/57_iPhone_Desktop_Launch.png");
+		this.copy("boilerplate/img/57_iPhone_Desktop_Launch@2.png", "img/57_iPhone_Desktop_Launch@2.png");
+		this.copy("boilerplate/img/72_iPad_Desktop_Launch.png", "img/72_iPad_Desktop_Launch.png");
+		this.copy("boilerplate/img/114_iPhone-Retina_Web_Clip.png", "img/114_iPhone-Retina_Web_Clip.png");
+		this.copy("boilerplate/img/144_iPad_Retina_Web_Clip.png", "img/144_iPad_Retina_Web_Clip.png");
+		this.copy("boilerplate/img/favicon.ico", "img/favicon.ico");
 
-        this.mkdir("model");
-        this.copy("boilerplate/model/coffee.json", "model/coffee.json");
-        this.copy("boilerplate/model/menu.json", "model/menu.json");
+		this.mkdir("model");
+		this.copy("boilerplate/model/coffee.json", "model/coffee.json");
+		this.copy("boilerplate/model/menu.json", "model/menu.json");
 
-        this.mkdir("view");
-        this.copy("boilerplate/view/App.controller.js", "view/App.controller.js");
-        this.copy("boilerplate/view/App.view.js", "view/App.view.js");
-        this.copy("boilerplate/view/CoffeeList.controller.js", "view/CoffeeList.controller.js");
-        this.copy("boilerplate/view/CoffeeList.view.js", "view/CoffeeList.view.js");
-        this.copy("boilerplate/view/Info.controller.js", "view/Info.controller.js");
-        this.copy("boilerplate/view/Info.view.xml", "view/Info.view.xml");
-        this.copy("boilerplate/view/Menu.controller.js", "view/Menu.controller.js");
-        this.copy("boilerplate/view/Menu.view.js", "view/Menu.view.js");
+		this.mkdir("view");
+		this.copy("boilerplate/view/App.controller.js", "view/App.controller.js");
+		this.copy("boilerplate/view/App.view.js", "view/App.view.js");
+		this.copy("boilerplate/view/CoffeeList.controller.js", "view/CoffeeList.controller.js");
+		this.copy("boilerplate/view/CoffeeList.view.js", "view/CoffeeList.view.js");
+		this.copy("boilerplate/view/Info.controller.js", "view/Info.controller.js");
+		this.copy("boilerplate/view/Info.view.xml", "view/Info.view.xml");
+		this.copy("boilerplate/view/Menu.controller.js", "view/Menu.controller.js");
+		this.copy("boilerplate/view/Menu.view.js", "view/Menu.view.js");
 
-        this.template("boilerplate/_index.html", "index.html");
-    };
+		this.template("boilerplate/_index.html", "index.html");
+	};
 }());
