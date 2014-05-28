@@ -55,7 +55,7 @@
 				name: "Single Page MVC App",
 				value: "spa"
 			}, {
-				name: "Splitapp Boilerplate",
+				name: "UI5SplitApp-Boilerplate",
 				value: "boilerplate"
 			}]
 		}, { // Only ask these questions if fiori-type app is chosen
@@ -286,7 +286,7 @@
 	};
 
 	/**
-	 * Scaffolding for a Splitapp Boilerplate Application.
+	 * Scaffolding for a UI5SplitApp-Boilerplate Application.
 	 */
 	openui5Generator.prototype.boilerplateApplication = function() {
 		if (this.applicationType !== "boilerplate") {
